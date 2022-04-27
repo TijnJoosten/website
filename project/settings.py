@@ -20,8 +20,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -35,7 +33,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'helloworld.apps.HelloworldConfig'
+    'website.apps.WebsiteConfig'
 ]
 
 MIDDLEWARE = [
@@ -125,3 +123,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 import django_on_heroku
 django_on_heroku.settings(locals())
+
+# SECURITY WARNING: don't run with debug turned on in production!
+DEBUG = True
+
+from dotenv import load_dotenv
+load_dotenv(encoding='utf16')
+SECRET_KEY = os.getenv('SECRET_KEY')
