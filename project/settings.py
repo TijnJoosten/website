@@ -125,7 +125,7 @@ import django_on_heroku
 django_on_heroku.settings(locals())
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 from dotenv import load_dotenv
 load_dotenv(encoding='utf16')
