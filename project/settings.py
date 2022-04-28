@@ -127,7 +127,7 @@ django_on_heroku.settings(locals())
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-# from dotenv import load_dotenv
-# load_dotenv(encoding='utf16')
-# SECRET_KEY = os.getenv('SECRET_KEY')
-# DEBUG = True
+from dotenv import load_dotenv
+load_dotenv(encoding='utf16')
+SECRET_KEY = os.getenv('SECRET_KEY')
+DEBUG = True

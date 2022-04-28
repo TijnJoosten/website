@@ -2,5 +2,10 @@ from django.shortcuts import render
 from django.template import loader
 
 def homePageView(request):
-    template = loader.get_template('home.html')
-    return render(request, 'home.html')
+    return render(request, 'website/homepage.html')
+
+def otherPageView(request):
+    return render(request, 'website/others.html')
+
+def testPageView(request):
+    return render(request, 'website/testfile.html')

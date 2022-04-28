@@ -1,0 +1,36 @@
+* {
+    padding : 0;
+    margin : 0;
+}
+
+body {
+    color : black;
+    font-style: sans-serif;
+		text-align: left;
+}
+
+.button {
+        background-color: hsl(160, 100%, 70%);
+        border: none;
+        color: black;
+        padding: 200px 340px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        cursor: pointer;
+ }
+
+.buttons {
+	background-color: black;
+	text-align: center;
+}
+
+.hometitle {
+		background-color: hsl(160, 100%, 70%);
+		text-align: center;
+	}
+	
+.contactme {
+		text-align: center;
+}
