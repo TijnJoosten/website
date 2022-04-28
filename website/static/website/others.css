@@ -1,36 +1,87 @@
 * {
-    padding : 10;
+    padding : 0;
     margin : 0;
 }
 
-body {
-    color : black;
-    font-style: sans-serif;
-		text-align: left;
+html {
+    min-height: 620px;
+    min-width: 620px;
+    border: 60px solid hsl(160, 100%, 70%);
+    border-top-width: 100px;
+    border-bottom-width: 100px;
+    border-radius: 20px;
+    margin: 50px 100px;
+    background-color: hsl(182, 83%, 9%);
 }
 
-.button {
-        background-color: hsl(160, 100%, 70%);
-        border: none;
-        color: black;
-        padding: 20px 34px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 20px;
-        cursor: pointer;
- }
+/* .pagecontent {
+    border: 5px solid black;
+    border-radius: 20px;
+} */
+
+body {
+    min-height: 500px;
+    min-width: 500px;
+    margin: -10px;
+    color: hsl(214, 0%, 94%);
+    background-color: hsl(182, 83%, 9%);
+    font-style: sans-serif;
+	text-align: left;
+    border: 60px solid hsl(182, 83%, 9%);
+    border-radius: 10px;
+    border-top: 1px;
+    border-bottom: 1px;
+    text-align: center;
+}
 
 .buttons {
-	background-color: black;
 	text-align: center;
 }
 
-.hometitle {
-		background-color: hsl(160, 100%, 70%);
-		text-align: center;
-	}
+.button {
+    /* height: 20px; */
+    margin: 30px;
+    margin-top: -147px;
+    background-color: hsl(160, 100%, 70%);
+    border: 1px solid black;
+    color: hsl(182, 83%, 9%);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 40px;
+    cursor: pointer;
+ }
+
+h1 {
+    margin-top: -40px;
+    font-size: 50px;
+}
+
+.aboutme h2{
+    margin: 20px;
+}
+
+.aboutme p{
+    margin: 20px;
+}
+
+.aboutme {
+    font-size: 30px;
+    min-height: 620px;
+    min-width: 480px;
+    margin: 20px auto;
+    text-align: left;
+    border: 5px solid hsl(160, 100%, 70%);
+    border-radius: 15px;   
+}
 	
 .contactme {
-		text-align: center;
+    height: 0px;
+    max-height: 60px;
+	text-align: center;
+    font-size: 20px;
+    color: black;
+    border: 0px solid hsl(182, 83%, 9%);
+    background-color: hsl(160, 100%, 70%);
 }

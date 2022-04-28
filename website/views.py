@@ -4,8 +4,8 @@ from django.template import loader
 def homePageView(request):
     return render(request, 'website/homepage.html')
 
-def otherPageView(request):
-    return render(request, 'website/others.html')
+def aboutPageView(request):
+    return render(request, 'website/about.html')
 
 def testPageView(request):
     return render(request, 'website/testfile.html')

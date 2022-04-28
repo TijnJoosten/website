@@ -4,9 +4,15 @@
 }
 
 body {
-    color : black;
+    color : white;
+    background-color: black;
     font-style: sans-serif;
-		text-align: left;
+	text-align: left;
+}
+
+.anoutme {
+    width: 300px;
+    margin: 0 auto;
 }
 
 .button {
@@ -21,10 +27,10 @@ body {
         cursor: pointer;
  }
 
-.buttons {
+/* .buttons {
 	background-color: black;
 	text-align: center;
-}
+} */
 
 .hometitle {
 		background-color: hsl(160, 100%, 70%);
