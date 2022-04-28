@@ -134,4 +134,4 @@ DEBUG = False
 # from dotenv import load_dotenv
 # load_dotenv(encoding='utf16')
 # SECRET_KEY = os.getenv('SECRET_KEY')
-DEBUG = True
+# DEBUG = True
