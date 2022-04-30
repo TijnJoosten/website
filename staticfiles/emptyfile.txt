@@ -1,1 +1,0 @@
-Emptyfile needed for saving staticfiles in git
