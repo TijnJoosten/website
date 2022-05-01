@@ -1,42 +1,129 @@
+:root {
+    --blue: hsl(205, 70%, 65%);
+    --blue2: hsl(170, 65%, 90%);
+    --oldgreen: hsl(160, 100%, 70%);
+    --background: rgb(247, 243, 243);
+    --dark-green: hsl(182, 83%, 9%);
+    --writing: rgb(33, 32, 32);
+    --dark-gray: hsl(217, 0%, 40%)
+    /* --writing: black; */
+}
+
 * {
     padding : 0;
     margin : 0;
 }
 
-body {
-    color : white;
-    background-color: black;
+html {
+    color: var(--writing);
     font-style: sans-serif;
+    font-size: 20px;
 	text-align: left;
+    border: 15px solid var(--blue);
+    border-top-width: 0px;
+    border-bottom-width: 5px;
+    border-radius: 20px;
+    margin: 50px 100px;
+    background-color: var(--background);
 }
 
-.anoutme {
-    width: 300px;
-    margin: 0 auto;
+nav {
+	text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: var(--blue);
+    margin-bottom: 10px;
 }
 
-.button {
-        background-color: hsl(160, 100%, 70%);
-        border: none;
-        color: black;
-        padding: 200px 340px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 20px;
-        cursor: pointer;
+.button_flat {
+    text-transform: uppercase;
+    margin: 10px;
+    background-color: var(--blue2);
+    border: 1px solid black;
+    border-radius: 10px;
+    color: var(--writing);
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    /* font-size: 30px; */
+    cursor: pointer;
  }
 
-/* .buttons {
-	background-color: black;
-	text-align: center;
-} */
+ .button {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--writing);
+    text-align: center;
+    cursor: pointer;
+    margin: 10px;
+}
 
-.hometitle {
-		background-color: hsl(160, 100%, 70%);
-		text-align: center;
-	}
+.button:hover {
+    color: var(--dark-gray);
+}
+
+main {
+    margin: -10px;
+    background-color: var(--background);
+    border: 60px solid var(--background);
+    border-radius: 10px;
+    border-top: 1px;
+    border-bottom: 1px;
+    text-align: center;
+    display: inline-flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    margin: 20px;
+}
+
+section {
+    flex-basis: 10em;
+    /* background-color: var(--blue); */
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin: 20px;
+    text-align: left;
+    border: 5px solid var(--blue);
+    border-left: 0px;
+    border-right: 0px;
+    border-radius: 15px;  
+    display: flex;
+    justify-content: center;
+}
+
+article h2 {
+    text-align: center;
+}
+
+section a {
+    align-self: flex-end;
+    margin: 5px;
+}
+
+article p {
+    text-align: justify;
+    margin: 10px -10px 20px -10px;
+}
+
+article ul {
+    text-align: center;
+}
+
+#introduction {
+    flex: 0 1 100%;
+}
+
 	
-.contactme {
-		text-align: center;
+footer {
+	text-align: center;
+    background-color: var(--blue);
+    margin-top: 10px;
 }
